@@ -1,6 +1,6 @@
 # **Вступление**
 ___
-### Тelegram-bot, на машином обучение с использованием scikit-learn
+### Телеграм-бот, использующий машинное обучение, с добавлением библиотеки scikit-learn
 
 
 
@@ -21,9 +21,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 import numpy as np
 ``` 
-*Импортируем свой токен в проэкт: ```bot = Bot("Your_Token") ```* 
 
-# Создаем бот
+# Создание бота
 ```python
 bot = telegram.Bot(token=TOKEN)
 updater = Updater(token=TOKEN, use_context=True)
@@ -67,8 +66,3 @@ dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, reply))
 # **Конфигурация**
 Add [Bot_Father](https://t.me/botfather)
 ___
-
-## Поддержка
-[Telegram](https://web.telegram.org/a/#5153165332)
-___
-
